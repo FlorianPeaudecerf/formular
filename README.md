@@ -2,9 +2,9 @@
 
 My first form.
 
-## Exécution
+## Execution
 
-Pour visualiser ce projet, ouvrez simplement le fichier `index.html` dans votre navigateur web préféré.
+To view this project, simply open the file index.html in your preferred web browser.
 
 ## Build with
 
