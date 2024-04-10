@@ -30,10 +30,25 @@
             <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" maxlength="5" title="Entrez un code postal valide (5 chiffres)" required><br><br>
             <label for="ville">Ville :</label>
             <input type="text" id="ville" name="ville" required><br><br>
-            <label for="métierexercé">Métier exercé :</label>
-            <input type="text" id="métier" name="métier" required><br><br>
-            <label for="nationalité">Nationalité :</label>
-            <input type="text" id="nationalité" name="nationalité" required><br><br>
+            <label for="metier">Choisissez votre métier :</label>
+                <select id="metier" name="metier">
+                <option value="developpeur">Développeur</option>
+                <option value="designer">Designer</option>
+                <option value="analyste">Analyste</option>
+                <option value="employée_restauration">Employé(e) de restauration</option>
+                <option value="gestionnaire">Gestionnaire de projet</option>
+                <!-- Ajoutez d'autres options ici au besoin -->
+                </select><br><br>
+            <label for="nationalite">Nationalité :</label>
+                <select id="nationalite" name="nationalite">
+                    <option value="france">France</option>
+                    <option value="usa">États-Unis</option>
+                    <option value="uk">Royaume-Uni</option>
+                    <option value="germany">Allemagne</option>
+                    <option value="spanish">Espagne</option>
+                    <option value="belgium">Belgique</option>
+                    <!-- Ajoutez d'autres options ici au besoin -->
+                </select><br><br>
             <label for="date_naissance">Date de naissance :</label>
             <input type="date" id="date_naissance" name="date_naissance" required><br><br>
             <label for="pays_naissance">Pays de naissance :</label>
