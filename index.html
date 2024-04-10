@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulaire d'inscription</title>
-    </head>
-    <body>
-        <header>
-            <h1>Formulaire d'inscription</h1>
-        </header>
-            <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom" name="prenom" required><br><br>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" required><br><br>
-            <label for="age">Âge :</label>
-            <input type="number" id="age" name="age" min="0" max="60">
-            <label>
-                <input type="radio" name="genre" value="homme" required> Homme
-                </label>
-                <label>
-                    <input type="radio" name="genre" value="femme" required> Femme
-                </label><br><br>
-                <label for="email">Adresse e-mail :</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="adress_post">Adresse Postale :</label>
-            <input type="text" id="adress_post" name="text" required><br><br>
-            <label for="cod_post">Code postal :</label>
-            <input type="text" id="cod_post" name="cod_post" pattern="[0-9]{5}" maxlength="5" title="Entrez un code postal valide (5 chiffres)" required><br><br>
-            <label for="ville">Ville :</label>
-            <input type="text" id="ville" name="ville" required><br><br>
-            <label for="metier">Choisissez votre métier :</label>
-                <select id="metier" name="metier">
-                <option value="developpeur">Développeur</option>
-                <option value="designer">Designer</option>
-                <option value="analyste">Analyste</option>
-                <option value="employée_restauration">Employé(e) de restauration</option>
-                <option value="gestionnaire">Gestionnaire de projet</option>
-                <!-- Ajoutez d'autres options ici au besoin -->
-                </select><br><br>
-            <label for="nat">Nationalité :</label>
-                <select id="nat" name="nat">
-                    <option value="france">France</option>
-                    <option value="usa">États-Unis</option>
-                    <option value="uk">Royaume-Uni</option>
-                    <option value="germany">Allemagne</option>
-                    <option value="spanish">Espagne</option>
-                    <option value="belgium">Belgique</option>
-                    <!-- Ajoutez d'autres options ici au besoin -->
-                </select><br><br>
-            <label for="date_naiss">Date de naissance :</label>
-            <input type="date" id="date_naiss" name="date_naiss" required><br><br>
-            <label for="pays_naissance">Pays de naissance :</label>
-            <input type="text" id="pays_naissance" name="pays_naissance" required><br><br>
-            <label for="numero_secu_social">Numéro de sécurité social :</label>
-            <input type="text" id="numero_secu_social" name="numero_secu_social" pattern="[0-9]{13}" maxlength="13" title="Entrez un numéro de sécurité social valide (13 chiffres)" required><br><br>
-            <label for="num_pass">Numéro de Passeport :</label>
-            <input type="text" name="num_pass" id="num_pass" pattern="[0-9]{9}" maxlength="9" title="Entrez un numéro de passeport valide" required><br><br>
-            <label for="date_del_pass">Date de délivrance du passeport :</label>
-            <input type="date" id="date_del_pass" name="date_del_pass" required><br><br>
-            <label for="date_val_pass">Date de validité du passeport</label>
-            <input type="date" id="date_val_pass" name="date_val_pass" required><br><br>
-            <form action="/votre-page-de-traitement" method="post">
-                <!-- Vos autres champs de formulaire ici -->
-            
-                <input type="submit" value="Envoyer">
-            </form>
-    </body>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire d'inscription</h1>
+    </header>
+    <fieldset>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+    </fieldset>
+
+    <fieldset>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" min="0" max="60"><br><br>
+    </fieldset>
+    <fieldset>
+        <label>
+            <input type="radio" name="genre" value="homme" required> Homme
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+            <input type="radio" name="genre" value="femme" required> Femme
+        </label><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="adress_post">Adresse Postale :</label>
+        <input type="text" id="adress_post" name="text" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="cod_post">Code postal :</label>
+        <input type="text" id="cod_post" name="cod_post" pattern="[0-9]{5}" maxlength="5"
+            title="Entrez un code postal valide (5 chiffres)" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="metier">Choisissez votre métier :</label>
+        <select id="metier" name="metier">
+            <option value="developpeur">Développeur</option>
+            <option value="designer">Designer</option>
+            <option value="analyste">Analyste</option>
+            <option value="employée_restauration">Employé(e) de restauration</option>
+            <option value="gestionnaire">Gestionnaire de projet</option>
+            <!-- Ajoutez d'autres options ici au besoin -->
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="nat">Nationalité :</label>
+        <select id="nat" name="nat">
+            <option value="france">France</option>
+            <option value="usa">États-Unis</option>
+            <option value="uk">Royaume-Uni</option>
+            <option value="germany">Allemagne</option>
+            <option value="spanish">Espagne</option>
+            <option value="belgium">Belgique</option>
+            <!-- Ajoutez d'autres options ici au besoin -->
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="date_naiss">Date de naissance :</label>
+        <input type="date" id="date_naiss" name="date_naiss" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="pays_naissance">Pays de naissance :</label>
+        <input type="text" id="pays_naissance" name="pays_naissance" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="numero_secu_social">Numéro de sécurité social :</label>
+        <input type="text" id="numero_secu_social" name="numero_secu_social" pattern="[0-9]{13}" maxlength="13"
+            title="Entrez un numéro de sécurité social valide (13 chiffres)" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="num_pass">Numéro de Passeport :</label>
+        <input type="text" name="num_pass" id="num_pass" pattern="[0-9]{9}" maxlength="9"
+            title="Entrez un numéro de passeport valide" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="date_del_pass">Date de délivrance du passeport :</label>
+        <input type="date" id="date_del_pass" name="date_del_pass" required><br><br>
+    </fieldset>
+    <fieldset>
+        <label for="date_val_pass">Date de validité du passeport</label>
+        <input type="date" id="date_val_pass" name="date_val_pass" required><br><br>
+    </fieldset>
+    <fieldset>
+        <form action="/votre-page-de-traitement" method="post">
+            <!-- Vos autres champs de formulaire ici -->
+
+            <input type="submit" value="Envoyer">
+    </fieldset>
+    </form>
+</body>
+
 </html>
